@@ -1,0 +1,15 @@
+.character {
+  border: 1px solid red;
+  margin: 2%;
+  width: 45%;
+  background: lightgrey;
+  opacity: 0.8;
+}
+
+.list {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+}

@@ -1,11 +1,19 @@
 import React from "react";
 import Character from "./Character";
+import "./StarWars.css";
 
 const CharacterList = props => {
   return (
     <div className="list">
       {props.characterList.map(character => {
-        return <Character films={character.films} name={character.name} />;
+        return (
+          <Character
+            gender={character.gender}
+            name={character.name}
+            height={character.height}
+            eyeColor={character.eye_color}
+          />
+        );
       })}
     </div>
   );
